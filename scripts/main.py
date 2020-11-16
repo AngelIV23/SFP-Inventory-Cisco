@@ -3,12 +3,11 @@ from genie.testbed import load
 tb = load('yaml/my_testbed.yaml')
 
 """This module search for info inside testbed hosts."""
-text_file = open("testing.csv", "w")
+text_file = open("testing.xlsx", "w")
 ### first line
 n = text_file.write('Id,Device Name, Serial\n')
 
 for device_name in tb.devices:
-    print(device_name)
     dev = tb.devices[device_name]
     dev.connect(log_stdout=False)
     p1 = dev.parse('show inventory')
