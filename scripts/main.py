@@ -10,7 +10,6 @@ n = text_file.write('Id,Device Name, Serial\n')
 
 
 for device_name in tb.devices:
-    identifier = identifier + 1
     dev = tb.devices[device_name]
     dev.connect(log_stdout=False)
     p1 = dev.parse('show inventory')
@@ -18,6 +17,7 @@ for device_name in tb.devices:
     print(str(identifier)+'. ' + device_name + " has a serial number: " + p1['main']['chassis']['IOSv']['sn'])
     ### next lines
     n = text_file.write(str(identifier) +', ' + device_name +', ' + p1['main']['chassis']['IOSv']['sn'] + '\n')
+    identifier = identifier + 1
 
 
 text_file.close()
