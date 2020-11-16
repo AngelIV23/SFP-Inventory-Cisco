@@ -1,0 +1,57 @@
+devices:
+  Router01:
+    connections:
+      cli:
+        ip: 192.168.111.211
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDog==}'
+        username: cisco
+      enable:
+        password: '%ENC{w5PDosOUw5fDog==}'
+    os: ios
+    platform: iosv
+    type: ios
+  Router02:
+    connections:
+      cli:
+        ip: 192.168.111.212
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDog==}'
+        username: cisco
+      enable:
+        password: '%ENC{w5PDosOUw5fDog==}'
+    os: ios
+    platform: iosv
+    type: ios
+  Router03:
+    connections:
+      cli:
+        ip: 192.168.111.213
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDog==}'
+        username: cisco
+      enable:
+        password: '%ENC{w5PDosOUw5fDog==}'
+    os: ios
+    platform: iosv
+    type: ios
+  Router04:
+    connections:
+      cli:
+        ip: 192.168.111.214
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDog==}'
+        username: cisco
+      enable:
+        password: '%ENC{w5PDosOUw5fDog==}'
+    os: ios
+    platform: iosv
+    type: ios
